@@ -10,7 +10,10 @@ interface TextOverlayProps {
 	visiblePercent: number;
 }
 
-export const sections: Section[] = [
+// Adjust this value to control the number of sections rendered (max 36)
+const SECTION_COUNT = 18;
+
+const allSections: Section[] = [
 	{
 		title: "Section 1: Introduction",
 		content: [
@@ -264,6 +267,8 @@ export const sections: Section[] = [
 		],
 	},
 ];
+
+export const sections = allSections.slice(0, SECTION_COUNT);
 
 function TextOverlay({
 	scrollPos,
