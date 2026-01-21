@@ -10,7 +10,7 @@ body {
 
 /* Scrollable content area */
 .content {
-  min-height: 600vh; /* Long scrollable document (3x longer) */
+  min-height: auto; /* Long scrollable document (3x longer) */
   padding: 40px 20px;
   background: transparent; /* Transparent so Rive shows through */
   position: relative;
